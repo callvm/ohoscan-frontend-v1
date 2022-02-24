@@ -1,0 +1,14 @@
+::ng-deep :root{
+  --dark-blue: #314d58;
+  --mustard: #d4af39;
+  --light-blue: #0d8ca5;
+  --shadow: 0px 6px 12px 2px #4848485e;
+  --grey: #808080;
+  --light-grey: #d5d5d5;
+  --black: #4a4a4a;
+}
+
+.sidebar-wrapper{
+  background-color: var(--dark-blue);
+  border-left: 3px solid var(--mustard);
+}

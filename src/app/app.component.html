@@ -1,0 +1,16 @@
+<mat-drawer-container class="example-container" [hasBackdrop]="false">
+  <mat-drawer
+    #drawer
+    class="example-sidenav"
+    mode="over"
+    position="end"
+    [opened]="showSidebar"
+    class="sidebar-wrapper"
+  >
+    <app-sidebar (closeSidebar)="closeSidebar()"></app-sidebar>
+  </mat-drawer>
+
+  <app-header></app-header>
+
+  <router-outlet></router-outlet>
+</mat-drawer-container>

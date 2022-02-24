@@ -1,0 +1,13 @@
+<div class="header-wrapper">
+  <div class="header-top">
+    <div class="header-logo">
+      <img src="/assets/logo.svg" alt="OHO Scan" />
+      <span>OHO Scan</span>
+    </div>
+    <div style="display: flex; align-items: center; background-color: white; border-radius: 20px;">
+      <fa-icon [icon]="faSearch" style="padding-left: 15px; color: var(--mustard);"></fa-icon>
+      <input class="header-input" placeholder="Search by Address / Transaction Hash / Block / Token" style="color: var(--grey)"/>
+    </div>
+    <fa-icon  [style.visibility]="!showSidebar ? 'visible' : 'hidden'" [icon]="faBars" class="menu-bars fa-2x" (click)="openSidebar()" style="width: 120px; text-align: right;"></fa-icon>
+  </div>
+</div>

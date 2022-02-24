@@ -1,0 +1,32 @@
+<div class="latest-info-wrapper">
+  <div class="latest-info-heading">Latest {{ heading }}</div>
+  <table style="margin: 0px 20px" class="latest-info-table">
+    <thead>
+      <tr>
+        <th
+          *ngFor="let mapping of mappings"
+          style="width: 120px"
+        >
+          {{ mapping.title }}
+        </th>
+      </tr>
+    </thead>
+    <tbody style="margin-top: 10px">
+      <tr *ngFor="let item of data; let i = index" style="height: 30px">
+        <td
+          *ngFor="let property of order"
+          [routerLink]="item[property].link ? item[property].link : null"
+          [class.link]="item[property].link != null"
+          style="width: 120px; text-align: center"
+        >
+          {{ item[property].data }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div style="display: flex; justify-content: center; margin-top: 20px;">
+    <button class="latest-info-button">
+      View all {{ heading?.toLowerCase() }}
+    </button>
+  </div>
+</div>

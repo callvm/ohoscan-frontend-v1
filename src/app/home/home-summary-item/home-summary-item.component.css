@@ -1,0 +1,32 @@
+.border{
+  border-right: 1px solid var(--light-grey);
+}
+
+.summary-wrapper{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: default;
+}
+
+.summary-icon{
+  color: var(--mustard);
+  font-size: 32px;
+  font-weight: 200;
+  padding-bottom: 5px;
+}
+
+.summary-heading{
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--mustard);
+  padding-bottom: 10px;
+}
+
+.summary-data{
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--light-blue);
+}

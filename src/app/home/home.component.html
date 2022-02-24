@@ -1,0 +1,24 @@
+<div style="padding: 20px">
+  <app-summary heading="The OHO Blockchain Explorer">
+    <div content style="padding: 10px 0px; display: flex; width: 100%; height: calc(100% - 25px);">
+      <app-home-summary-item class="summary-item" [icon]="faDollarSign" heading="OHO PRICE" data={{summary?.price}}>
+      </app-home-summary-item>
+      <app-home-summary-item class="summary-item" [icon]="faChartLine" heading="MARKET CAP" data={{summary?.marketCap}}>
+      </app-home-summary-item>
+      <app-home-summary-item class="summary-item" [icon]="faClock" heading="BLOCK TIME" data={{summary?.averageBlockTime}}>
+      </app-home-summary-item>
+      <app-home-summary-item class="summary-item" [icon]="faAddressBook" heading="HOLDERS" data={{summary?.addressCount}}>
+      </app-home-summary-item>
+      <app-home-summary-item class="summary-item" [icon]="faCoins" heading="TOKENS" data={{summary?.contractCount}}>
+      </app-home-summary-item>
+      <app-home-summary-item class="summary-item" [icon]="faExchange" heading="TRANSACTIONS" data={{summary?.transactionCount}}>
+      </app-home-summary-item>
+      <app-home-summary-item class="summary-item" [icon]="faGasPump" heading="GAS PRICE" data={{summary?.gasPrice}}>
+      </app-home-summary-item>
+    </div>
+  </app-summary>
+  <div style="display: flex; justify-content: space-between; padding-top: 40px; max-width: 1200px; margin: auto;">
+    <app-latest-info heading="Blocks" [mappings]="blockMappings" [data]="blockData"></app-latest-info>
+    <app-latest-info heading="Transactions" [mappings]="transactionMappings" [data]="transactionData"></app-latest-info>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+.header-wrapper{
+  background-color: var(--dark-blue);
+  height: 200px;
+  padding: 20px;
+}
+
+.header-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.header-input{
+  border-radius: 20px;
+  width: 600px;
+  height: 38px;
+  border: none;
+  padding: 0px 10px;
+  border: none;
+  font-size: 16px;
+
+}
+
+.header-input:active, .header-input:focus{
+  outline: none;
+  border: none;
+}
+
+.menu-bars{
+  color: var(--mustard);
+  cursor: pointer;
+}
+
+.header-logo{
+  min-width: 120px;
+  color: white;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.header-logo img{
+  width: 60px;
+  margin-right: 15px;
+}
